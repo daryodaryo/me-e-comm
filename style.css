@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, black, gray, black);
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: powderblue;
+    padding: 20px;
+    color: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    border: black;
+    background: linear-gradient(to bottom right, violet, pink, purple, orange, yellowgreen, red, blue);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.search-container {
+flex-grow: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: green;
+    color: black;
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex;
+    gap: 12px;
+    font-size: 24px;
+    margin-left: 10;
+}
+
+.icons i {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.1);
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: powderblue;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px; 
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.product-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to bottom left, purple, violet, purple);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: gray;
+    transform: scale(0.9);
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: powderblue;
+}
+
+footer .footer-content {
+    font-size: 14px;
+}
+
+.audio-container {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top: 30px;
+}
