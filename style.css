@@ -136,7 +136,7 @@ header {
 footer {
     background-color: black;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     color: powderblue;
 }
 
@@ -198,4 +198,20 @@ footer {
         padding: 10px 15px;
         font-size: 14px;
     }
+}
+
+.sign-up {
+    margin-right: 10px;
+}
+
+.sign-up:hover {
+    color: blue;
+}
+
+.log-in {
+    margin-right: 10px;
+}
+
+.log-in:hover {
+    color: red;
 }
